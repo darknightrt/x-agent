@@ -95,8 +95,11 @@
 ```
 1.2 模块 / Agent 职责划分
 OrchestratorAgent：制定执行计划（按平台并行采集 → 清洗 → 去重聚类 → 质量评分 → 洞察 → 生成简报），负责超时、重试、失败降级与进度汇报。
+
 Collector Agents（按平台拆分）：对接数据分析 API/爬取方式，产出原始条目（content + metadata + engagement + source_url）。
+
 Normalize&EnrichAgent：统一数据模型（跨平台字段对齐），做文本清洗、语言检测/翻译、实体/公司/产品/人物抽取、链接展开、发布时间对齐与时区归一。
+
 Dedup&ClusterAgent：
   - 去重：同 URL、同视频 ID、同 tweet id、相似标题/摘要指纹。
   - 聚类：同一事件多来源合并，保留“主来源 + 佐证来源”。
