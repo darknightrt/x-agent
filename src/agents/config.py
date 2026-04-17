@@ -43,7 +43,7 @@ class MCPConfig:
 @dataclass
 class XHSMCPConfig(MCPConfig):
     """tikhub MCP 配置"""
-    auth_token: str = "g84ADtlOgGeBu3StGK+wxE78Cxa0ZpU+whb+uB+Act+HpAyWeEGDdhWHFQ=="
+    auth_token: str = ""
     request_delay: float = 1.0
     max_concurrent: int = 5
     base_url: str = "https://api.tikhub.io"
@@ -53,9 +53,9 @@ class XHSMCPConfig(MCPConfig):
 class LLMConfig:
     """LLM 配置"""
     provider: str = "openai"  # openai, gemini
-    model_name: str = "ep-20251209233923-hwkrb"
-    api_key: str = "d2e0ef94-11f5-4f28-97de-0bc5b6c5320e"
-    base_url: str = "https://ark.cn-beijing.volces.com/api/v1"
+    model_name: str = ""
+    api_key: str = ""
+    base_url: str = ""
     temperature: float = 0.7
     max_tokens: int = 12000
 
