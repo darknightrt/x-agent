@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行业新闻简报 - skill</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #ff2442;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            border-left: 4px solid #ff2442;
+            padding-left: 10px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .hot-news-section {
+            margin: 20px 0;
+        }
+        .news-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            flex: 1;
+        }
+        .news-rank {
+            background: #ff2442;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .news-stats {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .news-stat {
+            background: #f8f9fa;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #666;
+        }
+        .news-stat-value {
+            font-weight: bold;
+            color: #333;
+        }
+        .news-summary {
+            margin: 10px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-left: 3px solid #ff2442;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #555;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .highlight-list { margin: 10px 0; padding-left: 18px; }
+        .highlight-list li { margin: 8px 0; color: #444; }
+        .highlight-ordered { padding-left: 22px; }
+        .highlight-ordered li { margin: 10px 0; }
+        .highlight-topic { font-weight: 700; color: #333; margin-bottom: 4px; }
+        .highlight-summary { color: #555; white-space: pre-wrap; word-break: break-word; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>行业新闻简报</h1>
+
+        <div class="metadata">
+            <strong>业务创意:</strong> skill<br>
+            <strong>日期时间:</strong> 2026-04-17 19:06:06<br>
+            <strong>运行 ID:</strong> skill_20260417_184932_713dd4d0
+        </div>
+
+        <h2>本期要点</h2>
+        <ol class="highlight-list highlight-ordered">
+            <li><div class='highlight-topic'>mattiapomelli</div><div class='highlight-summary'>Mattia推出Sleek Design Skill，该技能可即时提升移动应用设计质量，兼容Claude Code、Codex等多种代理。 用户反馈积极，如mrrobbo分享使用后效果出色；</div></li><li><div class='highlight-topic'>zarazhangrui</div><div class='highlight-summary'>Skill: https://t. co/F951xNM4Bp</div></li><li><div class='highlight-topic'>rahman_jago_</div><div class='highlight-summary'>热点帖子主题：技能展示策略讨论。 要点：作者建议只在必要时展示技能，主动选择被低估以保持优势，引发用户热议；</div></li><li><div class='highlight-topic'>heynavtoor</div><div class='highlight-summary'>热点帖子：Nav Toor 分享一个低成本AI技能创业计划，通过每月$20订阅Claude Pro、考取3个AWS证书（$550）、构建并销售AI技能给企业（每月收费$400-650），声称6个月后可实现月入$15,000，强调企业尚未意识到此类技能存在的商机。 讨论要点：1.</div></li><li><div class='highlight-topic'>ring_hyacinth</div><div class='highlight-summary'>用户Ring Hyacinth分享了自己开发的分镜拓展小工具，上传分镜后一键生成8个创意相关分镜，适用于brainstorm场景。 工具背后的分镜拓展逻辑基于用户自定义的skill，前端使用Codex编写，并接入Gemini API。</div></li>
+        </ol>
+
+        <h2>统计数据</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-label">搜索到的帖子</div>
+                <div class="stat-value">19</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">分析帖子数</div>
+                <div class="stat-value">19</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">热门帖子</div>
+                <div class="stat-value">3</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">相关内容</div>
+                <div class="stat-value">16</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">平均互动评分</div>
+                <div class="stat-value">8.2</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">分析评论数</div>
+                <div class="stat-value">805</div>
+            </div>
+        </div>
+
+        <h2>热点帖子内容</h2>
+        <div class="hot-news-section">
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">1</div>
+                        <div class="news-title">Hesamation</div>
+                    </div>
+                </div>
+                <div class="news-summary">bro created an AI job search system for Claude Code that scored 700+ job applications and actually got him a job. AND IT&#x27;S NOW OPEN-SOURCE. It scans multiple company career pages, rewrites your CV per job, and even fills application forms. The repo has:
+&gt; 14 skill modes (evaluate, scan, PDF, ...)
+&gt; Go terminal dashboard
+&gt; ATS-optimized PDF generation via Playwright
+&gt; 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Stripe...) GitHub: https://t.co/PwrYBOAphi</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">126901</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">59480</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">2260</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">387</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">2</div>
+                        <div class="news-title">adamlyttleapps</div>
+                    </div>
+                </div>
+                <div class="news-summary">Building a high converting app onboarding flow is hard.. So I built a Claude Skill that does it for me Instead of spending hours figuring out the right questions and pain points… now it&#x27;s done in 5 minutes Just point it at your codebase and it does the rest Questionnaires. Custom plans. App demos. The exact strategy used by Cal AI ($1M/mo) and Mob ($100k/mo) It&#x27;s the App Onboarding Questionnaire skill and it&#x27;s available on github here:
+https://t.co/zinpGegRX0</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">8796</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">4155</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">78</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">84</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">3</div>
+                        <div class="news-title">polydao</div>
+                    </div>
+                </div>
+                <div class="news-summary">Claude Code will grill you with 40+ questions before writing a single line of code &gt; it&#x27;s called /grill-me - 3 sentences long. most impactful skill I use instead of jumping straight to code - it walks every branch of your design tree until there&#x27;s zero ambiguity &gt; every question reveals something you hadn&#x27;t thought of other skills I use daily: &gt; /write-a-prd - idea → proper product doc &gt; /prd-to-issues - doc → GitHub issues automatically &gt; /tdd - tests first, forces edge case thinking before code &gt; /improve-codebase-architecture -&gt; full structural review of your codebase all links and full breakdown in my article full video from Matt Pocock 👇</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">7171</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">3371</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">124</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">19</span></div>
+                </div>
+            </div>
+        </div>
+
+        <h2>相关内容</h2>
+        <div class="hot-news-section">
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">1</div>
+                        <div class="news-title">mattiapomelli</div>
+                    </div>
+                </div>
+                <div class="news-summary">Introducing the Sleek Design Skill Just install it and your agent instantly makes better mobile app designs Works with Claude Code, Codex or any agent with skills. Link below. https://t.co/CteLvByFtb</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">6351</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">2919</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">104</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">67</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">2</div>
+                        <div class="news-title">zarazhangrui</div>
+                    </div>
+                </div>
+                <div class="news-summary">Skill: https://t.co/F951xNM4Bp</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">3880</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">1820</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">61</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">19</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">3</div>
+                        <div class="news-title">rahman_jago_</div>
+                    </div>
+                </div>
+                <div class="news-summary">Unless it is specifically necessary that you demonstrate skill, Always opt to be underestimated🙂 https://t.co/CDoHsI6BV1</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">3701</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">208</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">779</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">316</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">4</div>
+                        <div class="news-title">heynavtoor</div>
+                    </div>
+                </div>
+                <div class="news-summary">here&#x27;s the simple version: 1. get Claude Pro for $20/month
+2. pass 3 AWS exams for $550 total
+3. build one AI skill and sell it to businesses
+4. charge $400-650/month to keep it running for them total cost to start: $570. total income after 6 months: $15,000/month. most businesses don&#x27;t even know these skills exist yet. that&#x27;s the opportunity. this isn&#x27;t just an article. it&#x27;s a step-by-step plan to build a $180,000/year business.</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">3493</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">1622</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">61</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">22</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">5</div>
+                        <div class="news-title">ring_hyacinth</div>
+                    </div>
+                </div>
+                <div class="news-summary">给自己做了一个分镜拓展小工具。 上传一个分镜，可以一键拓展出 8 个有趣的相关分镜，最近自用复用率很高，很适合 brainstorm 分镜想法！ 背后的分镜拓展逻辑是自己写的 skill，画布爆炸前端是用 Codex 写的，接的自己的 Gemini api. 随着编程变得越来越简单，可能一些常用小工具创作者会自己给自己做了，那洞察自己真的需要什么就变得越来越重要，不是我去适应工具，而是我到底需要什么工具 🤔 如果大家也需要的话，我会考虑开源！</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">3479</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">1279</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">144</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">163</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">6</div>
+                        <div class="news-title">ChessLordK</div>
+                    </div>
+                </div>
+                <div class="news-summary">Cristiano Ronaldo invented his own signature skill and made it work better than a fake shot 🔥😏 https://t.co/sSLkHAIZCX</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">2909</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">451</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">565</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">104</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">7</div>
+                        <div class="news-title">Menceng_</div>
+                    </div>
+                </div>
+                <div class="news-summary">Pingpong accuracy battle 🎯🏓
+It&#x27;s really a test of skill, mistakes mean an advantage to the opponent. https://t.co/vQlHq8iXiX</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">2821</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">14</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">353</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">578</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">8</div>
+                        <div class="news-title">namcios</div>
+                    </div>
+                </div>
+                <div class="news-summary">Isso é surreal. Uma guerra silenciosa explodiu no mundo corporativo chinês e ninguém no Brasil está prestando atenção. Empresas na China começaram a obrigar funcionários a documentar todo seu conhecimento em &quot;skill files&quot; de IA. Arquivos que ensinam um modelo a replicar exatamente como você trabalha, pensa e toma decisões. A ferramenta se chama colleague.skill. 6.900 stars no GitHub em dias. Financiada pelo Shanghai AI Lab. Ela puxa automaticamente seus chats, analisa seus emails e documentos, e gera um clone de IA que trabalha no seu estilo. Até sua personalidade é modelada: &quot;perfeccionista&quot;, &quot;passivo-agressivo&quot;, &quot;mestre em delegar pra cima&quot;. O objetivo é brutal: quando você sair, a empresa continua rodando com a sua versão digital. Mas a resposta dos trabalhadores veio em horas. Um desenvolvedor lançou o anti-distill.skill. Você joga o skill file que a empresa te obrigou a escrever, e a ferramenta devolve uma versão que parece completa, profissional, detalhada. Só que todo insight real foi cirurgicamente removido. Tem até três níveis de intensidade: leve, médio e pesado, dependendo de quanto o chefe está monitorando. Você entrega a casca. Guarda o conhecimento verdadeiro num backup privado. Isso é um preview do que toda empresa de conhecimento vai tentar fazer nos próximos 18 meses. Todo &quot;documente seu processo&quot; e &quot;crie um playbook da sua função&quot; que você recebe hoje carrega a mesma lógica: extrair, codificar, substituir. A única barreira entre você e a sua versão digital é o conhecimento tácito que você escolhe não documentar. Quem entende isso se posiciona. Quem não entende vira um skill file.</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">2659</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">1004</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">189</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">28</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">9</div>
+                        <div class="news-title">absolvezd</div>
+                    </div>
+                </div>
+                <div class="news-summary">Skill level: untouchable ⚡ https://t.co/YcU3KGPDlR</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">2272</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">5</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">284</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">470</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">10</div>
+                        <div class="news-title">0xtonixie</div>
+                    </div>
+                </div>
+                <div class="news-summary">基于最近 $rave 带起的妖币牛市，我写了一个skill，并找了一些分析妖币的干货。 https://t.co/VDHRWO7uxL 然后，关于怎么去分析，可以看看这些好文： 1. 羊姐 @arya_web3 分析庄家如何靠oi刷量等手段进行诱空
+https://t.co/6yYn54wKmD 2. Donato老师@wuk_bitcoin 老师OI和价格背离模型解读
+https://t.co/rIy13NQBWF 3. 韦陀老师 @the cryptoskanda 解析如何用AI去找到妖币的策略
+https://t.co/S7szNSbZWU 4. freeland老师 @derrrrrrrq 关于oi和价格的解读
+https://t.co/HgKsQGgQ1a 同时大部分的妖币几乎都是同时上了币安alpha和币安合约，因此我的这个skill主要是帮你找到市场上所有的这些代币，我这里把市值前20低的代币都列了出来。 最后，交易需谨慎，请不要拿你输不起的钱投入高倍合约当中，记住你是在交易，不是在赌博</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">1592</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">589</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">101</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">37</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">11</div>
+                        <div class="news-title">WarArchiveClips</div>
+                    </div>
+                </div>
+                <div class="news-summary">Standing and firing machine gun with this level of control and accuracy into such a small opening shows serious skill. Clearly a fighter who has spent a lot of time behind the weapon. https://t.co/0qaI8xtzUY</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">1249</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">431</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">103</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">26</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">12</div>
+                        <div class="news-title">KKaWSB</div>
+                    </div>
+                </div>
+                <div class="news-summary">🔥 Anthropic最新线下官方演讲：别再造Agent了，去造Skill。 通用Agent确实聪明，但缺少领域知识，一碰真实世界就碎——难维护、不可靠，出了问题也不知道为什么。 真正能落地的是Skill：装着代码、脚本、提示词和流程知识，用文件系统和bash做接口。不酷，但可组合、可控制、可分享，人人可造。 https://t.co/Lj7GgYBb5P</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">1044</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">402</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">71</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">9</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">13</div>
+                        <div class="news-title">SheldrickTrust</div>
+                    </div>
+                </div>
+                <div class="news-summary">Chamboi has found his own personal mud wallow and would like it known that he won&#x27;t be leaving any time soon. More mud monster than black rhino when he emerges, the thick coating will protect his skin from biting insects – one vital skill needed for the wild that this growing orphan has already mastered. It&#x27;s an education he desperately needs: rescued as a lone newborn, he would have no recollection of life in the wild, or of his mother. We&#x27;re his only family now: https://t.co/NW8OU4JJQa</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">895</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">29</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">270</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">9</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">14</div>
+                        <div class="news-title">Kling_ai</div>
+                    </div>
+                </div>
+                <div class="news-summary">Kling AI Skill Now Live!
+No complex configs, no model adaptation! One-stop encapsulation of Kling API core powers:
+✅ Text/Image-to-Video + Intelligent Storyboard
+✅ 4K Image Gen + Style Transfer + Image Series
+✅ Custom Element Library &amp; cross-scene consistency
+✅ Natural language integration + full Agent compatibility (Claude Code/Cursor/OpenClaw/Codex/Copilot/Opencode &amp; more) Slash dev costs, supercharge creative delivery. 🎁 Limited-time OpenClaw Friendly Trial Packages available today!
+👉 Check &amp; get started: https://t.co/KLimHv5Hby</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">843</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">246</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">77</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">40</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">15</div>
+                        <div class="news-title">vikingmute</div>
+                    </div>
+                </div>
+                <div class="news-summary">这几天经常用这个 taste skill 做实验，发现真的是很不错，用了它你就能获得一个极简，配色舒服，间距和字体大小考究的页面，去 AI slop 很不错，不过我测试的都是英文网站，让 v0 生成了一个 Sandbox 首页 一个股市 dashboard 都不错，而且 prompt 几乎都不用怎么写。 v0 预览的地址是：https://t.co/LPQMtOt67N 大家可以感受一下这个设计效果</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">727</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">314</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">29</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">4</span></div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-header">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                        <div class="news-rank">16</div>
+                        <div class="news-title">LufzzLiz</div>
+                    </div>
+                </div>
+                <div class="news-summary">小互这个确实逼真。既然是直播，那得动起来呀，来个视频，大家猜猜是哪个模型🐶 https://t.co/5NvK5yIAMW</div>
+                <div class="news-stats">
+                    <div class="news-stat">总互动: <span class="news-stat-value">131</span></div>
+                    <div class="news-stat">藏: <span class="news-stat-value">37</span></div>
+                    <div class="news-stat">分享: <span class="news-stat-value">5</span></div>
+                    <div class="news-stat">评: <span class="news-stat-value">14</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
