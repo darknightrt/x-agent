@@ -1,3 +1,6 @@
+### 快速开始
+
+```bash
 # 安装依赖
 cd src
 pip install -r requirements.txt
@@ -8,3 +11,4 @@ pip install -r requirements.txt
 
 # 运行验证
 python run_agent.py skills
+```
