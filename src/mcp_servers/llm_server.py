@@ -26,7 +26,7 @@ class LLMClient:
     def __init__(
         self,
         api_key: str = "",
-        base_url: str = "https://ark.cn-beijing.volces.com/api/v1",
+        base_url: str = "",
         model_name: str = "",
         temperature: float = 0.7,
         max_tokens: int = 12000
